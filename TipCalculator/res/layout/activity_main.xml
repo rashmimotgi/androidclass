@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:alpha="1"
+    
+    tools:context="${packageName}.${activityClass}" >
+
+    <Button
+        android:id="@+id/btn20"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn10"
+        android:layout_alignBottom="@+id/btn10"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:onClick="onFifteenPercent"           
+        android:text="@string/bt15" />
+
+    <Button
+        android:id="@+id/button3"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn20"
+        android:layout_alignBottom="@+id/btn20"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/btn20"
+        android:onClick="onTwentyPercent"
+        android:textStyle="bold"        
+        android:text="@string/bt20" />
+
+    <EditText
+        android:id="@+id/etTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/button3"
+        android:layout_marginTop="36dp"
+        android:textStyle="bold"       
+        android:ems="10"
+        android:hint="@string/etHint" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn10"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etTotal"
+        android:layout_below="@+id/etTotal"
+        android:layout_marginTop="62dp"
+        android:textStyle="bold"       
+        android:onClick="onTenPercent"
+        android:text="@string/bt10" />
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn20"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
+</RelativeLayout>
